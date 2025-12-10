@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Story of My Life — Mustapha</title>
+  <meta name="description" content="A personal, beautiful one-page site that tells the story of my life: timeline, photos, contact and support buttons." />
+
+  <!-- GOOGLE ADSENSE: replace ca-pub-XXXXXXXX with your AdSense publisher ID when approved -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#7c3aed;
+      --muted:#94a3b8;
+      --glass: rgba(255,255,255,0.03);
+      --radius:14px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071029 0%, #081427 100%);color:#e6eef8;line-height:1.5}
+    .container{max-width:1000px;margin:40px auto;padding:24px}
+
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#0ea5a1);display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:start}
+    .hero-card{background:var(--card);border-radius:var(--radius);padding:22px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+    h1{margin:0 0 8px 0;font-size:28px}
+    p.lead{margin:0;color:var(--muted)}
+
+    .profile{display:flex;flex-direction:column;gap:14px}
+    .avatar{width:100%;height:220px;border-radius:12px;background-image:url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=');background-size:cover;background-position:center}
+
+    .actions{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#0ea5a1);color:white}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    .timeline{margin-top:22px}
+    .timeline .event{display:flex;gap:18px;padding:18px;border-radius:12px;background:var(--glass);margin-bottom:12px}
+    .event .date{min-width:92px;color:var(--muted);font-weight:700}
+    .event .body h3{margin:0 0 6px 0}
+
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+    .gallery img{width:100%;height:110px;object-fit:cover;border-radius:8px}
+
+    .ad-slot{margin:18px 0;padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);text-align:center;color:var(--muted)}
+
+    form.contact{display:flex;flex-direction:column;gap:10px}
+    input,textarea{padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    textarea{min-height:120px}
+
+    footer{margin-top:36px;color:var(--muted);text-align:center;padding:18px}
+
+    @media(max-width:880px){
+      .hero{grid-template-columns:1fr;}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:520px){
+      .gallery{grid-template-columns:1fr}
+      .logo{width:48px;height:48px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">MI</div>
+        <div>
+          <div style="font-weight:800">Mustapha Ibrahim</div>
+          <div style="font-size:12px;color:var(--muted)">Story of my life — personal site</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#story">Story</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#support">Support</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-card">
+        <h1>Story of My Life</h1>
+        <p class="lead">A friendly one-page site that tells who I am, where I started, and where I'm going. Use this as your personal landing page, portfolio, or biography.</p>
+
+        <div class="timeline" id="story">
+          <!-- Deep life story timeline -->
+          <div class="event">
+            <div class="date">Childhood</div>
+            <div class="body">
+              <h3>Where My Story Began</h3>
+              <p class="muted">I grew up in a world that wasn’t perfect, but it shaped me. I was surrounded by people who didn’t always understand my dreams, yet those quiet moments of curiosity pushed me closer to discovering who I wanted to become.</p>
+            </div>
+          </div>
+
+          <div class="event">
+            <div class="date">Growing Up</div>
+            <div class="body">
+              <h3>Learning Life the Hard Way</h3>
+              <p class="muted">Life taught me its lessons early — patience, strength, disappointment, and hope. I experienced both joy and pain, and in between them, I learned how to keep moving, even when I didn’t understand where the road was taking me.</p>
+            </div>
+          </div>
+
+          <div class="event">
+            <div class="date">My Turning Point</div>
+            <div class="body">
+              <h3>When Everything Changed</h3>
+              <p class="muted">There was a moment — quiet but powerful — when I realized nobody was coming to save me. If I wanted a better life, I had to build it myself. That day was the beginning of my journey into self-growth, discipline, and ambition.</p>
+            </div>
+          </div>
+
+          <div class="event">
+            <div class="date">Today</div>
+            <div class="body">
+              <h3>Still Becoming</h3>
+              <p class="muted">I’m still writing my story. I’m still learning, still dreaming, still creating. I’m not perfect — I’m a work in progress. But every day, I become a deeper, stronger, and better version of myself.</p>
+            </div>
+          </div>
+            <div class="body">
+              <h3>Born in NIGER STATE</h3>
+              <p class="muted">I started life curious about how things work — especially computers and the internet.</p>
+            </div>
+          </div>
+
+          <div class="event">
+            <div class="date">2018</div>
+            <div class="body">
+              <h3>First Website</h3>
+              <p class="muted">Built a simple HTML/CSS page and uploaded it online. I fell in love with web development.</p>
+            </div>
+          </div>
+
+          <div class="event">
+            <div class="date">2025</div>
+            <div class="body">
+              <h3>Today</h3>
+              <p class="muted">Publishing content, entertaining visitors, and building small projects. I accept support via Paystack or Flutterwave.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+          <!-- Replace href with your actual Paystack or Flutterwave donation links -->
+          <a id="paystack-btn" class="btn btn-primary" href="https://paystack.com/pay/YOUR-PAYSTACK-LINK" target="_blank">Support Me — Paystack</a>
+          <a id="flutterwave-btn" class="btn btn-ghost" href="https://flutterwave.com/pay/YOUR-FLUTTERWAVE-LINK" target="_blank">Support Me — Flutterwave</a>
+        </div>
+
+      </div>
+
+      <aside class="profile">
+        <div class="avatar"></div>
+        <div class="hero-card">
+          <h2 style="font-size:18px;margin:0">About Me</h2>
+          <p style="color:var(--muted);margin:8px 0 0 0;">Hi — I'm Mustapha. I create websites, share stories, and make small projects. I love teaching and helping others learn web development.</p>
+
+          <div class="ad-slot" style="margin-top:12px">Ad slot (place AdSense ad unit here)</div>
+
+          <div style="margin-top:12px;display:flex;gap:10px">
+            <a class="btn btn-ghost" href="#contact">Contact Me</a>
+            <a class="btn" style="background:#111;color:var(--muted)" href="#gallery">View Gallery</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h3 style="margin:0 0 8px 0">Quick facts</h3>
+          <ul style="margin:0;padding-left:18px;color:var(--muted)">
+            <li>Web developer — HTML/CSS/JS</li>
+            <li>Based in Nigeria</li>
+            <li>Open to small gigs & collabs</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <section id="gallery" style="margin-top:26px">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <h2 style="margin:0">Gallery</h2>
+        <div style="color:var(--muted);font-size:14px">Memories & snapshots</div>
+      </div>
+
+      <div class="gallery" style="margin-top:12px">
+        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=">
+        <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=">
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:22px">
+      <h2 style="margin:0 0 8px 0">Contact Me</h2>
+      <p style="color:var(--muted);margin:0 0 12px 0">Send a message — this form uses FormSubmit and will email your message to the address you set in the action attribute.</p>
+
+      <!-- Replace your-email@example.com with the email that should receive messages. -->
+      <form class="contact" action="mu27135300@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New message from website" />
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <textarea name="message" placeholder="Your message" required></textarea>
+        <div style="display:flex;gap:8px">
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <a class="btn btn-ghost" href="mailto:your-email@example.com">Or email me</a>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <div>Made with ❤️ — Mustapha Ibrahim</div>
+      <div style="font-size:13px;margin-top:8px;color:var(--muted)">Replace donation links, AdSense ID and form email in the HTML file before publishing.</div>
+    </footer>
+  </div>
+
+  <script>
+    // Small helper: open payment links in a new tab and track clicks (simple analytics)
+    document.getElementById('paystack-btn').addEventListener('click',function(){
+      // replace with any tracking code or hit to your analytics endpoint
+      console.log('Paystack support clicked')
+    })
+    document.getElementById('flutterwave-btn').addEventListener('click',function(){
+      console.log('Flutterwave support clicked')
+    })
+  </script>
+</body>
+</html>
+
